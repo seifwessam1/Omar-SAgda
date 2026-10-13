@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#251020">
+  <title>SAGDA ♥ OMAR | Our Story</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Montserrat:wght@500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-glow"></div>
+    <div class="loader-content">
+      <h2>SAGDA</h2>
+      <div class="loader-heart">♥</div>
+      <h2 class="loader-omar">OMAR</h2>
+      <div class="loader-track"><span id="loaderLine"></span></div>
+      <div class="loader-status">
+        <span id="loaderPercent">0%</span>
+        <span>LOADING OUR STORY</span>
+      </div>
+    </div>
+    <span class="loader-decoration decoration-one">♥</span>
+    <span class="loader-decoration decoration-two">✦</span>
+  </div>
+
+  <div id="progressBar"></div>
+  <div id="movingBackground"></div>
+  <div id="romanticBackground"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="logo" href="#home">SAGDA <span>♥</span> OMAR</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#counter">حكايتنا</a>
+      <a href="#letter">الرسالة</a>
+      <a href="#gallery">الذكريات</a>
+      <a href="#dates">التواريخ</a>
+      <a href="#love">الحب</a>
+      <a href="#surprise">المفاجأة</a>
+    </div>
+
+    <a href="#love" class="nav-heart">♥</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content reveal">
+        <div class="hero-kicker">✦ A STORY WRITTEN BY HEARTS ✦</div>
+        <div class="hero-date">01 · 06 · 2026</div>
+
+        <h1>
+          <span>SAGDA</span>
+          <b>♥</b>
+          <span>OMAR</span>
+        </h1>
+
+        <h2 class="hero-arabic">سجدة ♥ عمر</h2>
+
+        <p class="hero-description">
+          حكاية بدأت بكلمة... ولسه أجمل صفحاتها بتتكتب ❤️
+        </p>
+
+        <div class="hero-actions">
+          <a href="#counter" class="main-btn">اكتشفوا الحكاية ↓</a>
+          <a href="#gallery" class="ghost-btn">شوفوا الذكريات ♥</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL TO DISCOVER</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- NAMES -->
+    <section class="section">
+      <div class="section-heading reveal">
+        <span>THE TWO NAMES</span>
+        <h2>اسمين وحكاية واحدة ❤️</h2>
+        <p>كل اسم له مكانه، وكل ذكرى ليها حكايتها.</p>
+      </div>
+
+      <div class="names-grid">
+        <article class="name-card reveal">
+          <div class="name-icon">O</div>
+          <span>HIS STORY</span>
+          <h3>OMAR</h3>
+          <p>عمر</p>
+          <div class="name-decoration">✦</div>
+        </article>
+
+        <div class="heart-between reveal">
+          <span>♥</span>
+          <small>TOGETHER</small>
+        </div>
+
+        <article class="name-card reveal">
+          <div class="name-icon">S</div>
+          <span>HER STORY</span>
+          <h3>SAGDA</h3>
+          <p>سجدة</p>
+          <div class="name-decoration">✧</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section id="counter" class="section">
+      <div class="section-heading reveal">
+        <span>EVERY SECOND MATTERS</span>
+        <h2>من يوم ما بدأت الحكاية ❤️</h2>
+        <p>منذ 1 يونيو 2026</p>
+      </div>
+
+      <div class="counter-box reveal">
+        <div class="counter-item">
+          <strong id="counterYears">0</strong>
+          <span>سنة</span>
+        </div>
+        <div class="counter-item">
+          <strong id="counterMonths">0</strong>
+          <span>شهر</span>
+        </div>
+        <div class="counter-item">
+          <strong id="counterDays">0</strong>
+          <span>يوم</span>
+        </div>
+        <div class="counter-item">
+          <strong id="counterHours">0</strong>
+          <span>ساعة</span>
+        </div>
+        <div class="counter-item">
+          <strong id="counterMinutes">0</strong>
+          <span>دقيقة</span>
+        </div>
+        <div class="counter-item">
+          <strong id="counterSeconds">0</strong>
+          <span>ثانية</span>
+        </div>
+      </div>
+
+      <p class="counter-message reveal">
+        كل ثانية بتعدّي بتضيف صفحة جديدة للحكاية ❤️
+      </p>
+    </section>
+
+    <!-- LETTER AND ENVELOPE -->
+    <section id="letter" class="section">
+      <div class="section-heading reveal">
+        <span>A SECRET LETTER</span>
+        <h2>رسالة مخصوص ليكي 💌</h2>
+        <p>اضغطي على الزر عشان تفتحي الظرف.</p>
+      </div>
+
+      <div class="envelope-area reveal" id="envelopeArea">
+        <article class="letter-paper">
+          <div class="letter-top">SAGDA ♥ OMAR</div>
+          <div class="letter-date">01 • 06 • 2026</div>
+
+          <h3>بحب أقولك يا سجدة ❤️</h3>
+
+          <p>
+            يمكن الكلام بسيط، بس كل كلمة هنا معمولة عشان تكون ذكرى لطيفة.
+          </p>
+
+          <p>
+            وجودك في الحكاية دي خلّى ليها معنى مختلف،
+            وكل ذكرى جديدة بتبقى صفحة أحلى.
+          </p>
+
+          <p>
+            أتمنى الأيام الجاية تكون مليانة ضحك ونجاح وراحة بال،
+            وأجمل حاجة إن الحكاية لسه في أولها ❤️
+          </p>
+
+          <div class="letter-sign">SAGDA ♥ OMAR</div>
+        </article>
+
+        <div class="envelope" aria-hidden="true">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-heart">♥</div>
+        </div>
+
+        <button id="openEnvelope" class="main-btn envelope-btn"
+          type="button" aria-expanded="false">افتحي الظرف 💌</button>
+
+        <h3 id="openedTitle" class="opened-title">رسالة من القلب ❤️</h3>
+      </div>
+    </section>
+
+    <!-- LOVE BANNER -->
+    <section class="big-love-section">
+      <div class="big-love reveal">
+        <span>A LITTLE REMINDER</span>
+        <h2>LOVE</h2>
+        <div class="big-love-and">and memories <b>♥</b></div>
+        <p>في ذكريات بتفضل جميلة مهما عدّى الوقت.</p>
+      </div>
+    </section>
+
+    <!-- IMPORTANT DATES -->
+    <section id="dates" class="section">
+      <div class="section-heading reveal">
+        <span>SPECIAL DATES</span>
+        <h2>تواريخ ليها مكان خاص ❤️</h2>
+        <p>لحظات صغيرة بتفضل جزء من الحكاية.</p>
+      </div>
+
+      <div class="dates-grid">
+        <article class="date-card reveal">
+          <div class="date-icon">🎂</div>
+          <span>SAGDA'S BIRTHDAY</span>
+          <h3>26</h3>
+          <p>يونيو 2011</p>
+        </article>
+
+        <article class="date-card special reveal">
+          <div class="date-icon">♥</div>
+          <span>THE BEGINNING</span>
+          <h3>01</h3>
+          <p>يونيو 2026</p>
+          <b>بداية الحكاية</b>
+        </article>
+
+        <article class="date-card reveal">
+          <div class="date-icon">🎂</div>
+          <span>OMAR'S BIRTHDAY</span>
+          <h3>25</h3>
+          <p>نوفمبر 2010</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-heading reveal">
+        <span>LOVE IN PICTURES</span>
+        <h2>حكايتنا بالألوان ❤️</h2>
+        <p>اضغطي على أي صورة عشان تشوفيها بحجم أكبر 🌷</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item reveal" type="button"
+          data-image="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1400&q=85">
+          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80" alt="ورود حمراء" loading="lazy">
+          <span class="gallery-overlay"><b>LOVE IS BEAUTIFUL</b><small>♥ لحظة جميلة</small></span>
+        </button>
+
+        <button class="gallery-item reveal" type="button"
+          data-image="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="باقة زهور ملونة" loading="lazy">
+          <span class="gallery-overlay"><b>FLOWERS FOR YOU</b><small>✿ تفاصيل رقيقة</small></span>
+        </button>
+
+        <button class="gallery-item reveal" type="button"
+          data-image="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1400&q=85">
+          <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="لحظة دافئة" loading="lazy">
+          <span class="gallery-overlay"><b>SWEET MOMENTS</b><small>♥ ذكريات حلوة</small></span>
+        </button>
+
+        <button class="gallery-item reveal" type="button"
+          data-image="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1400&q=85">
+          <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80" alt="زهور وردية" loading="lazy">
+          <span class="gallery-overlay"><b>PINK DREAMS</b><small>♥ ألوان وذكريات</small></span>
+        </button>
+      </div>
+
+      <p class="counter-message reveal">
+        مش لازم كل ذكرى تكون صورة... ساعات إحساس واحد بيحكي حكاية كاملة ❤️
+      </p>
+    </section>
+
+    <!-- LOVE CALCULATOR -->
+    <section id="love" class="section">
+      <div class="section-heading reveal">
+        <span>A LITTLE FUN</span>
+        <h2>حاسبة الحب ❤️</h2>
+        <p>للتسلية فقط؛ النتيجة مش مقياس حقيقي للمشاعر.</p>
+      </div>
+
+      <div class="love-card reveal">
+        <div class="love-circle">
+          <div class="circle-inner">
+            <span>♥</span>
+            <strong id="lovePercentage">100%</strong>
+            <small>JUST FOR FUN</small>
+          </div>
+        </div>
+
+        <div class="calculator">
+          <div class="calculator-icon">♡</div>
+          <h3>جرّبوا حظكم</h3>
+          <p>اكتبوا الاسمين وشوفوا النتيجة ✨</p>
+
+          <div class="input-row">
+            <input id="name1" type="text" maxlength="30"
+              placeholder="الاسم الأول" autocomplete="off">
+            <span>♥</span>
+            <input id="name2" type="text" maxlength="30"
+              placeholder="الاسم الثاني" autocomplete="off">
+          </div>
+
+          <button id="calculateLove" class="main-btn" type="button">
+            احسب النتيجة ♥
+          </button>
+
+          <p id="loveResult" aria-live="polite">اكتب الاسمين وشوف النتيجة ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LONG LETTER -->
+    <section class="section long-letter">
+      <article class="letter-content reveal">
+        <span class="letter-decoration">♥</span>
+        <span class="letter-label">DEAR SAGDA</span>
+
+        <h2>إلى سجدة ❤️</h2>
+        <div class="letter-line"></div>
+
+        <p>
+          يمكن الموقع ده عبارة عن كود وشوية تصميمات،
+          لكن كل تفصيلة فيه معمولة عشان تكون مختلفة.
+        </p>
+
+        <p>
+          من يوم 1 يونيو 2026 بدأت ذكرى جديدة تستاهل تتحفظ.
+        </p>
+
+        <p>
+          أتمنى الأيام الجاية تكون مليانة ضحك ونجاح وذكريات أحلى بكتير،
+          وتفضلي دايمًا فخورة بنفسك وبكل خطوة بتاخديها.
+        </p>
+
+        <div class="letter-divider">♥</div>
+        <h3>SAGDA ♥ OMAR</h3>
+        <p class="english">Our story is just beginning.</p>
+      </article>
+    </section>
+
+    <!-- SECRET SURPRISE -->
+    <section id="surprise" class="section">
+      <div class="section-heading reveal">
+        <span>TOP SECRET</span>
+        <h2>في حاجة مستخبية هنا 🔐</h2>
+        <p>اكتبي كلمة السر عشان تفتحي المفاجأة.</p>
+      </div>
+
+      <div class="secret-box reveal">
+        <div class="lock-icon" id="lockIcon">🔐</div>
+        <h3>مفاجأة سرية</h3>
+        <p>في رسالة صغيرة مستنياكي هنا...</p>
+
+        <form id="secretForm" class="password-area">
+          <input type="password" id="secretPassword"
+            maxlength="40" placeholder="كلمة السر..."
+            autocomplete="off" aria-label="كلمة السر">
+
+          <button id="unlockSurprise" class="main-btn" type="submit">
+            افتحي المفاجأة 🔓
+          </button>
+        </form>
+
+        <p id="passwordMessage" aria-live="polite"></p>
+
+        <div id="secretSurprise" class="secret-surprise" hidden>
+          <div class="surprise-particles">♥ ✧ ♥ ✦ ♥</div>
+          <div class="surprise-heart">💗</div>
+          <span>YOU FOUND IT</span>
+
+          <h2>مفاجأة سرية ❤️</h2>
+
+          <div class="secret-message">
+            <p>لو وصلتي لهنا... فدي حاجة مخصوص ليكي ❤️</p>
+            <p>يمكن الموقع معمول من كود، بس كل تفصيلة فيه وراها ذكرى.</p>
+            <p>من يوم 1 يونيو 2026 بدأت حكاية جديدة، وأتمنى الأيام الجاية تكون مليانة ضحك وذكريات حلوة.</p>
+            <p class="special-line">وأجمل مفاجأة؟</p>
+            <h3>إن الحكاية لسه في أولها... ❤️</h3>
+            <div class="secret-sign">SAGDA ♥ OMAR</div>
+          </div>
+
+          <button id="finalHeartButton" class="main-btn" type="button">
+            اضغطي هنا ❤️
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section class="final-section">
+      <div class="final-content reveal">
+        <span>END OF THIS PAGE</span>
+        <h2>ولسه الحكاية مكملة...</h2>
+        <p>SAGDA ♥ OMAR</p>
+        <div class="final-heart">♥</div>
+        <small>01 • 06 • 2026</small>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">SAGDA <span>♥</span> OMAR</div>
+    <p>Made with ❤️ and code</p>
+    <a href="#home">العودة للأعلى ↑</a>
+  </footer>
+
+  <!-- IMAGE LIGHTBOX -->
+  <div id="lightbox" class="lightbox"
+    role="dialog" aria-modal="true" aria-label="عرض الصورة"
+    aria-hidden="true">
+    <button id="closeLightbox" class="close-lightbox"
+      type="button" aria-label="إغلاق الصورة">×</button>
+    <img id="lightboxImage" src="" alt="صورة مكبرة">
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
